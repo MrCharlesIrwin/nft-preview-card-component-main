@@ -1,0 +1,119 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+@import "variables";
+
+h1 {
+  &:hover {
+    color: $Cyan;
+    cursor: pointer;
+  }
+  color: $white;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+a {
+  &:hover {
+    color: $Cyan;
+  }
+  color: $white;
+  text-decoration: none;
+}
+em {
+  color: $Cyan;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+b {
+  font-weight: 600;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: $line;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainBG-Color;
+  color: $Soft;
+  height: 95dvh;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-family: "Outfit", sans-serif, serif;
+}
+main {
+  background-color: $cardBG-Color;
+  border-radius: 15px;
+  height: 630px;
+
+  width: min(380px, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: 83%;
+    section {
+      margin: auto;
+
+      .img {
+        &:hover::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: url("/images/icon-view.svg");
+          background-repeat: no-repeat;
+          top: 43%;
+          left: 42%;
+        }
+        &:hover::before {
+          content: '';
+          inset: 0;
+          position: absolute;
+          background-color: $Cyan;
+          opacity: .4;
+        }
+        background-image: url(/images/image-equilibrium.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: 100% 100%;
+        width: 100%;
+
+        height: 330px;
+        border-radius: 9px;
+      }
+      div {
+        margin: 15px auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        section {
+          display: grid;
+          grid-auto-flow: column;
+          align-items: center;
+          gap: 2%;
+          width: 40%;
+          font-size: 1.1em;
+          .ethereum_img {
+            width: 10px;
+          }
+          img {
+            width: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-top: 15px;
+
+  img {
+    border: 2px solid hsl(0, 7%, 84%);
+    border-radius: 50%;
+    height: 35px;
+    width: auto;
+  }
+}
