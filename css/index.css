@@ -72,7 +72,7 @@ main div section {
   margin: auto;
 }
 main div section .img {
-  background-image: url(/images/image-equilibrium.jpg);
+  background-image: url(images/image-equilibrium.jpg);
   background-repeat: no-repeat;
   position: relative;
   background-size: 100% 100%;
